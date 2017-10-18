@@ -1,1 +1,78 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #1C2C34;
+    font-family: MuseoSans,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ECEDEE;
+    -webkit-font-smoothing: antialiased;
+}
 
+
+.c-image-plate {
+    margin-bottom: .4375rem;
+    background: #1C2C34;
+padding-bottom: 3.125rem;
+padding-top: 3.125rem;
+}
+
+.c-image-plate--position-right .c-image-plate__wrapper {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+
+
+element {
+
+}
+.c-image-plate--position-right .c-image-plate__wrapper {
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+
+}
+.c-image-plate__wrapper {
+
+    max-width: 1600px;
+    max-width: 100rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+c-image-plate::after {
+    display: block;
+    bottom: -6px;
+    bottom: -.375rem;
+}
+
+.c-image-plate::after, .c-image-plate::before {
+    background: #071820;
+    -webkit-box-shadow: 0 0 .1875rem 0 #91B5C5,inset 0 .0625rem .25rem 0 #071820;
+    box-shadow: 0 0 .1875rem 0 #91B5C5,inset 0 .0625rem .25rem 0 #071820;
+    content: '';
+    display: none;
+    height: 5px;
+    height: .3125rem;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
