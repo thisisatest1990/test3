@@ -76,3 +76,94 @@ c-image-plate::after {
     left: 0;
     right: 0;
 }
+
+.c-image-plate__bg {
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.c-image-plate__bg {
+    z-index: 1;
+}
+
+html.object-fit .c-image-plate__bg-img {
+    width: 100%;
+}
+.c-image-plate__bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-height: none;
+    max-width: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: auto;
+}
+.c-image-plate__bg-img {
+    min-width: 100%;
+}
+
+.c-image-plate:not(.c-image-plate--position-full) .c-image-plate__content--style-no-box {
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.c-image-plate:not(.c-image-plate--position-full) .c-image-plate__content {
+    background: #1C2C34;
+    -webkit-box-shadow: 0 .1875rem .1875rem 0 #071820,inset 0 .0625rem .0625rem 0 rgba(145,181,197,.75);
+    box-shadow: 0 .1875rem .1875rem 0 #071820,inset 0 .0625rem .0625rem 0 rgba(145,181,197,.75);
+    position: relative;
+    padding: 2.5rem;
+}
+.c-image-plate--position-right .c-image-plate__content {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-right: 2.5rem;
+}
+
+.c-image-plate:not(.c-image-plate--position-full) .c-image-plate__content--style-no-box::before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.c-image-plate:not(.c-image-plate--position-full) .c-image-plate__content::before {
+    -webkit-box-shadow: 0 .0625rem .125rem 0 rgba(145,181,197,.75),inset 0 .1875rem .1875rem 0 #071820;
+    box-shadow: 0 .0625rem .125rem 0 rgba(145,181,197,.75),inset 0 .1875rem .1875rem 0 #071820;
+    content: '';
+    height: calc(100% - .875rem);
+    left: .4375rem;
+    pointer-events: none;
+    position: absolute;
+    top: .4375rem;
+    width: calc(100% - .875rem);
+}
+
+h2, h3, h4, h5, h6 {
+    color: #ECEDEE;
+}
+
+.h2, h2 {
+    font-size: 1.75rem;
+}
+
+.h1, h1 {
+    font-size: 3rem;
+}
+
+b, dl dt, strong {
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: inherit;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
